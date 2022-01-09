@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10sp"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="10dp"
+    android:textAlignment="center"
+    app:cardElevation="20dp"
+    android:layout_marginBottom="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+
+        <LinearLayout
+            android:id="@+id/text_section"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/categoryTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Auto"
+                android:textSize="40sp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/addressTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="192 Lexington St"
+                android:textSize="20sp"
+                android:layout_marginBottom="5dp"
+                />
+
+            <TextView
+                android:id="@+id/descriptionTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Parking"
+                android:textSize="15sp"
+                android:layout_marginBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/costTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="$125"
+                android:textSize="15sp"
+                android:layout_marginBottom="5dp"
+                 />
+
+            <TextView
+                android:id="@+id/dateTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="12/27"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/button_section"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+
+        >
+
+        <ImageButton
+            android:id="@+id/deleteImageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="1dp"
+            android:background="@color/white"
+            android:color="@android:color/holo_red_light"
+            app:srcCompat="@drawable/ic_delete" />
+
+        <ImageButton
+            android:id="@+id/editExpenseImageView"
+            android:layout_width="61dp"
+            android:layout_height="58dp"
+            android:layout_below="@+id/deleteImageView"
+            android:layout_alignParentStart="true"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="16dp"
+
+            android:background="@color/white"
+            app:srcCompat="@drawable/ic_baseline_edit_24" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>
